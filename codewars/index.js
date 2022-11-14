@@ -1,19 +1,26 @@
-function isPalindrome(str) {
-    //  нижний регистр
-    str = str.toLowerCase();
-    // строку в массив
-    let strArr = str.split('');
-    // развернеули разбирую строку
-    strArr = strArr.reverse();
-    // слепили строку обратно
-    strArr = strArr.join('');
-    // задали устровие 
-    if (str == strArr) {
-        return true;
-    } else {
-        return false;
-    }
+// const stringToNumber = function (str) {
+//     const parse = parseInt(str, 10);
+//     if (isNaN(parse)) {
+//         return null;
+//     } else {
+//         return parse;
+//     }
+// };
+// console.log(stringToNumber("463"));
+// console.log(stringToNumber(123));
 
+// let stringToNumber = function (str) {
+//     return Number(str);
+// }
+// console.log(stringToNumber('234'));
+
+// let numberToString = function (num) {
+//     return String(num);
+// };
+// console.log(typeof numberToString(123));
+
+const stringToNumber = function (str) {
+    return Number(str);
 }
-
-console.log(isPalindrome('toot'));
+console.log(stringToNumber('123'));
+console.log(typeof stringToNumber('123'));
