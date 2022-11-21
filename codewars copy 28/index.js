@@ -8,6 +8,6 @@
 */
 
 function abbrevName(name) {
-    return name.toUpperCase().split(' ').map(x => x[0]).join(' ');
+    return name.toUpperCase().split(' ').map(x => x[0]).join('.');
 }
 console.log(abbrevName('Sam Fisher'));
