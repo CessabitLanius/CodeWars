@@ -13,6 +13,6 @@
     Testing: [1, 0, 1, 1] ==> 11
  */
 
-const binaryArrayToNumber = arr => {
-    // your code
-};
+    const binaryArrayToNumber = arr => {
+        return parseInt(arr.join(''),2);
+    };
